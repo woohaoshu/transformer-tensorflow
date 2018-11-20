@@ -247,7 +247,7 @@ def make_train_and_test_set(shuffle=True):
 
     if shuffle:
         print("shuffle dataset ...")
-        train_p = np.random.permutation(len(train_dec))
+        train_p = np.random.permutation(len(train_dec)) # permutation返回一个打乱的数组；shuffle直接打乱原始数组
         test_p = np.random.permutation(len(test_dec))
 
         return ((train_enc[train_p], train_dec[train_p]),

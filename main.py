@@ -88,9 +88,9 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(
                         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--config', type=str, default='config',
+    parser.add_argument('--config', type=str, default='check-tiny',
                         help='config file name')
-    parser.add_argument('--mode', type=str, default='train',
+    parser.add_argument('--mode', type=str, default='train_and_evaluate',
                         help='Mode (train/test/train_and_evaluate)')
     args = parser.parse_args()
 
